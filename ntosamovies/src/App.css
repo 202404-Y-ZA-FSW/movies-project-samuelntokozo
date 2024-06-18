@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  background-color: #181818; /* Dark background */
   color: white;
+  display: flex; /* Use flexbox for layout */
+  align-items: center;
+  padding: 10px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-weight: bold;
+  margin-right: auto; /* Push search bar to the right */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie-icon {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.search-bar {
+  display: flex; /* Flexbox for search bar layout */
+  background-color: #282828;
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px;
+}
+
+.search-bar input {
+  background: none;
+  border: none;
+  color: white;
+  flex-grow: 1;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  color: #f00; /* Red search button */
+  cursor: pointer;
+}
+
+.date-time {
+  margin-left: 20px; /* Spacing from search bar */
+  font-size: 0.9em;
+}
+
+.user-profile {
+  margin-left: 20px;
+}
+
+.user-profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Circular profile image */
 }

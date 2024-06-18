@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import navbar from "./components/navbar"; // Assuming your component files are in the "components" folder
+import Tabs from "./components/Tabs"; // Corrected path
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <>
+      <navbar/>
+      <Tabs />
+      </ >
+    );
 }
 
 export default App;
