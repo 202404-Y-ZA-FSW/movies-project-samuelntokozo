@@ -7,7 +7,6 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer-icons'>
-                <div>
                 <h1>ntokozo Nkosi</h1>
                 <a href='https://www.linkedin.com/in/ntokozo-nkosi-966150298/'>
                     <img src={LinkedIn_icon} alt="LinkedIn Profile" />
@@ -15,17 +14,8 @@ const Footer = () => {
                 <a href='https://github.com/NtokozoMitchell'>
                     <img src={Github_icon} alt="GitHub Profile" />
                 </a>
-                </div>
+
                 
-                <div >
-                <h1>Samuel </h1>
-                <a href='https://www.linkedin.com/in/ntokozo-nkosi-966150298/'>
-                    <img src={LinkedIn_icon} alt="LinkedIn Profile" />
-                </a>
-                <a href='https://github.com/NtokozoMitchell'>
-                    <img src={Github_icon} alt="GitHub Profile" />
-                </a>
-                </div>
             </div>
             <p>&copy; 2024, All Rights Reserved</p>
         </div>
