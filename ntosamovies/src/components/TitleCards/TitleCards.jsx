@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react'
-import './TitleCards.css'
-
+import React, { useEffect, useRef, useState } from 'react';
+import './TitleCards.css';
 
 const TitleCards = ({ title, category }) => {
     const [apiData, setApiData] = useState([]);
@@ -27,6 +26,7 @@ const TitleCards = ({ title, category }) => {
 
         cardsRef.current.addEventListener('wheel', handleWheel);
 
+       
         return () => {
             cardsRef.current.removeEventListener('wheel', handleWheel);
         };
@@ -44,7 +44,7 @@ const TitleCards = ({ title, category }) => {
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
 export default TitleCards;
