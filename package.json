@@ -3,10 +3,14 @@
     "prettier": "^3.3.2"
   },
   "scripts": {
-   
-      "format": "prettier --check --ignore-path .gitignore .",
-      "format:fix": "prettier --write --ignore-path .gitignore ."
-   
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.2",
+    "react-router-dom": "^6.23.1"
   }
-
 }

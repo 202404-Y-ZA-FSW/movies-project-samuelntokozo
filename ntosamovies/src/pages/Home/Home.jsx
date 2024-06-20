@@ -7,6 +7,7 @@ import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/Footer';
+import Actors from '../../pages/Actors/Actors'
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         <TitleCards title={"Upcoming"}/>
         <TitleCards title={"Top Picks for You"}/>
         <Footer />
+        <Actors/>
       </div>
     </div>
   )
