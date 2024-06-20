@@ -6,7 +6,7 @@ const Player = () => {
   return (
     <div className='player'>
         <img src={back_arrow_icon} alt="" />
-        <iframe width='90%' height='90%' src='https://www.youtube/embed/8Iy2geJD8HY' trailer='trailer' frameBorder='0' allowFullScreen></iframe>
+        <iframe width='90%' height='90%' src='https://www.youtube.com/embed/8Iy2geJD8HY' trailer='trailer' frameBorder='0' allowFullScreen></iframe>
         <div className='player-info'>
           <p>Published Date</p>
           <p>Name</p>
