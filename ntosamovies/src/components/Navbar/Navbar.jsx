@@ -5,6 +5,9 @@ import search_icon from '../../assets/search_icon.svg'
 import bell_icon from '../../assets/bell_icon.svg'
 import profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.svg'
+import { Link } from 'react-router-dom';
+
+
 
 const Navbar = () => {
   return (
@@ -18,7 +21,9 @@ const Navbar = () => {
           <li>New & Popular</li>
           <li>My List</li>
           <li>Browse by Langauges</li>
-          <li>Actors</li>
+          <li>
+            <Link to='/actors'>Actors</Link>
+           </li>
           <li><input type="search" placeholder='Search...' className='input' /> </li>
         </ul>
       </div>

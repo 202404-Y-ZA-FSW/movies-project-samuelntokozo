@@ -1,0 +1,42 @@
+.actors-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+  }
+  
+  .actors-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  
+  .actor-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .actor-card h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .actor-card img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .actors-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .actors-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

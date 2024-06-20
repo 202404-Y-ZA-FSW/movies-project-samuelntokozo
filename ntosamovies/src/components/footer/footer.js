@@ -1,35 +1,53 @@
-import React from 'react'
-import './Footer.css'
-import LinkedIn_icon from '../../assets/linkedIn_icon.jpg'
-import Github_icon from '../../assets/github_icon.jpg'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import './Footer.css';
 
 const Footer = () => {
-    return (
-        <div className='footer'>
-            <div className='footer-icons'>
-                <div>
-                <h1>ntokozo Nkosi</h1>
-                <a href='https://www.linkedin.com/in/ntokozo-nkosi-966150298/'>
-                    <img src={LinkedIn_icon} alt="LinkedIn Profile" />
+  const currentYear = new Date().getFullYear();
+
+  const items = [
+    {
+      githubLink: "https://github.com/NtokozoMitchell",
+      linkedinLink: "https://www.linkedin.com/in/ntokozo-nkosi-966150298/",
+      name: "Ntokozo Nkosi"
+    },
+    {
+      githubLink: "https://github.com/samuelthis",
+      linkedinLink: "www.linkedin.com/in/thitevhelwimasuvhe",
+      name: "Samuel"
+    },
+  ];
+
+  return (
+    <div className='footer'>
+      <div className='items-container'>
+        {items.map((item, index) => (
+          <div key={index} className='item'>
+            <h2 className="text1">{item.name}</h2>
+            <div>
+              <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                <span>
+                  <FontAwesomeIcon icon={faGithub} />
+                </span>
+              </a>
+              {item.linkedinLink && (
+                <a href={item.linkedinLink} target="_blank" rel="noopener noreferrer">
+                  <span>
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </span>
                 </a>
-                <a href='https://github.com/NtokozoMitchell'>
-                    <img src={Github_icon} alt="GitHub Profile" />
-                </a>
-                </div>
-                
-                <div >
-                <h1>Samuel </h1>
-                <a href='https://www.linkedin.com/in/ntokozo-nkosi-966150298/'>
-                    <img src={LinkedIn_icon} alt="LinkedIn Profile" />
-                </a>
-                <a href='https://github.com/NtokozoMitchell'>
-                    <img src={Github_icon} alt="GitHub Profile" />
-                </a>
-                </div>
+              )}
             </div>
-            <p>&copy; 2024, All Rights Reserved</p>
-        </div>
-    );
+          </div>
+        ))}
+      </div>
+      <div className="footer-bottom">
+        <span>Copyright © {currentYear}. All Rights Reserved.</span>
+        <span>Terms of use | Privacy Policy</span>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
