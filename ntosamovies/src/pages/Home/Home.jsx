@@ -33,7 +33,7 @@ const Home = () => {
         <TitleCards title={"Upcoming"} category={"upcoming"}/>
         <TitleCards title={"Top Picks for You"} category={"now_playing"}/>
         <Footer />
-        <Actors/>
+    
       </div>
     </div>
   )

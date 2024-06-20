@@ -24,11 +24,15 @@ const TitleCards = ({ title, category }) => {
             .then(response => setApiData(response.results))
             .catch(err => console.error(err));
 
-        cardsRef.current.addEventListener('wheel', handleWheel);
+        const cardsElement = cardsRef.current;
+        if (cardsElement) {
+            cardsElement.addEventListener('wheel', handleWheel);
+        }
 
-       
         return () => {
-            cardsRef.current.removeEventListener('wheel', handleWheel);
+            if (cardsElement) {
+                cardsElement.removeEventListener('wheel', handleWheel);
+            }
         };
     }, [category, options]);
 
