@@ -10,15 +10,15 @@ import Actors from './pages/Actors/Actors';
 const App = () => {
   return (
     
-    // <Router>
+    <Router>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/player/:id' element={<Player/>}/>
         <Route path='/actors' element={<Actors />} />
       </Routes>
-      // <Footer/>
-   /* </Router> */
+       <Footer/>
+    </Router> 
   
   );
 };
