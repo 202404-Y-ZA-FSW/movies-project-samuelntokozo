@@ -18,6 +18,7 @@ function Actors() {
 
   return (
     <div className="actors-container">
+    <h1>Popular Actors</h1>
       {actorsList.map((actor) => (
         <div key={actor.id} className="actor-card">
           <h2>{actor.name}</h2>
