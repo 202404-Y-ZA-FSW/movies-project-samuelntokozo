@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       githubLink: "https://github.com/samuelthis",
-      linkedinLink: "www.linkedin.com/in/thitevhelwimasuvhe",
+      linkedinLink: "https://www.linkedin.com/in/thitevhelwimasuvhe",
       name: "Samuel"
     },
   ];
@@ -39,7 +39,13 @@ const Footer = () => {
                 </a>
               )}
             </div>
+          </div>
+        ))}
+      </div>
+      <p className='copy-right'>&copy; {currentYear} Your Company</p>
+    </div>
+  );
+};
 
-}
+export default Footer;
 
-export default Footer
