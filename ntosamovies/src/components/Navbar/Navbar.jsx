@@ -14,14 +14,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
-          <li>TV Shows</li>
-          <li>Movies</li>
-          <li>New & Popular</li>
-          <li>My List</li>
-          <li>Browse by Langauges</li>
-          <li>
-            <Link to='/actors'>Actors</Link>
-           </li>
+
           <li><input type="search" placeholder='Search...' className='input' /> </li>
         </ul>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Actors() {
   const [actorsList, setActorsList] = useState([]);
@@ -14,14 +15,18 @@ function Actors() {
     getActor();
   }, []);
 
-  console.log(actorsList);
+  // console.log(actorsList);
 
   return (
     <div className="actors-container">
+    <h1>Popular Actors</h1>
       {actorsList.map((actor) => (
         <div key={actor.id} className="actor-card">
+          <Link to={`/actor/${actor.id}`}>
           <h2>{actor.name}</h2>
+          </Link>
           <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} alt={actor.name} />
+         
         </div>
       ))}
     </div>

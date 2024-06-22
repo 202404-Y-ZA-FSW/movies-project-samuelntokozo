@@ -8,6 +8,9 @@ import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import Footer from '../../components/Footer/footer';
 
+
+
+
 const Home = () => {
   return (
     <div className='home'>
@@ -31,8 +34,6 @@ const Home = () => {
         <TitleCards title={"Only on NtosaMovies"} category={"popular"}/>
         <TitleCards title={"Upcoming"} category={"upcoming"}/>
         <TitleCards title={"Top Picks for You"} category={"now_playing"}/>
-        <Footer />
-    
       </div>
     </div>
   )
