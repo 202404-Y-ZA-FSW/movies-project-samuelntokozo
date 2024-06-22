@@ -16,12 +16,12 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
-          <li><input type="search" placeholder='Search...' className='input' /> </li>
+          <li>TV Shows</li>
+          <li>Genres</li>
         </ul>
       </div>
       <div className="navbar-right">
-        <img src={search_icon} alt="search_icon" className='icons' />
-        <p>Children</p>
+      <li><input type="search" placeholder='Search...' className='input' /> </li>
         {/* <input type="search" placeholder='Search...' /> */}
         <img src={bell_icon} alt="search_icon" className='icons' />
         <div className="navbar-profile">

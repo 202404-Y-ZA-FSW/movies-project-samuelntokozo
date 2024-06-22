@@ -38,10 +38,11 @@
     font-size: 14px;
 }
 
-.navbar-right {
+.navbar-right ul li {
     display: flex;
     align-items: center;
     gap: 20px;
+    list-style: none;
 }
 
 .navbar-right .icons {
