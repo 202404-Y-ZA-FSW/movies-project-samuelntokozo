@@ -6,12 +6,10 @@ import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
-<<<<<<< HEAD
-//import Footer from '../../components/Footer/Footer';
-=======
 import Footer from '../../components/Footer/Footer';
 import Actors from '../../pages/Actors/Actors'
->>>>>>> 754b7140f1bd49002ddde9f2d300e06e6d0d2a8e
+
+
 
 const Home = () => {
   return (
@@ -36,12 +34,8 @@ const Home = () => {
         <TitleCards title={"Only on NtosaMovies"} category={"popular"}/>
         <TitleCards title={"Upcoming"} category={"upcoming"}/>
         <TitleCards title={"Top Picks for You"} category={"now_playing"}/>
-<<<<<<< HEAD
         {/*<Footer /> */}
-=======
         <Footer />
-    
->>>>>>> 754b7140f1bd49002ddde9f2d300e06e6d0d2a8e
       </div>
     </div>
   )
