@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 const Navbar = () => {
   return (
     <div className='navbar'>
@@ -14,8 +15,8 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
-          <li><Link>Movies</Link></li>
-          <li> <Link>TV Shows</Link></li>
+          <li><Link>Movies className="link-a" to='/Movies'</Link></li>
+          <li> <Link className="link-a" to='/TV Shows'>TV Shows</Link></li>
           <li>Genres</li>
        <li><Link className="link-a" to='/actors'>Actors</Link></li>
           <li><input type="search" placeholder='Search...' className='input' /> </li>
