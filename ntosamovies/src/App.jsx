@@ -8,7 +8,7 @@ import Actors from './pages/Actors/Actors';
 
 const App = () => {
   return (
-   // <Router>
+
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
@@ -16,7 +16,7 @@ const App = () => {
         <Route path='/actors' element={<Actors />} />
         <Route path='/actors/:id' element={<SingleActorsPage />} />
       </Routes>
-    // </Router>
+
   );
 };
 
