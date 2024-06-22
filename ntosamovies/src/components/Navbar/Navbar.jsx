@@ -22,7 +22,6 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        {/* <input type="search" placeholder='Search...' /> */}
         <div className="navbar-profile">
           <img src={profile_img} alt="profile" className='profile' />
           <img src={caret_icon} alt="profile" />
