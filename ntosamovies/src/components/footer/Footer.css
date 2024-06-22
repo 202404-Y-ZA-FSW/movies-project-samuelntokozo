@@ -10,7 +10,7 @@
     gap: 1rem;
   }
   
-  /* Media query for medium screens and larger */
+  
   @media (min-width: 768px) {
     .items-container {
       grid-template-columns: repeat(2, 1fr);

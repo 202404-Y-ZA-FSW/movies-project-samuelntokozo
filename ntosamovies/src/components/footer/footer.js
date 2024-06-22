@@ -14,7 +14,7 @@ const Footer = () => {
     },
     {
       githubLink: "https://github.com/samuelthis",
-      linkedinLink: "www.linkedin.com/in/thitevhelwimasuvhe",
+      linkedinLink: "https://www.linkedin.com/in/thitevhelwimasuvhe",
       name: "Samuel"
     },
   ];
@@ -39,7 +39,14 @@ const Footer = () => {
                 </a>
               )}
             </div>
-
+          </div>
+        ))}
+      </div>
+      <div className='footer-year'>
+        &copy; {currentYear}
+      </div>
+    </div>
+  );
 }
 
 export default Footer
