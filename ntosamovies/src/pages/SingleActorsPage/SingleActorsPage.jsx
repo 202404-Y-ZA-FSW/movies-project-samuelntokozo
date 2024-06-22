@@ -12,12 +12,12 @@ function ActorDetails() {
 
       try {
         // Fetch actor details
-        const actorResponse = await fetch(`https://api.themoviedb.org/3/person/${id}?api_key=${apiKey}`);
+        const actorResponse = await fetch(`https://api.themoviedb.org/3/person/${actor.id}?api_key=${apiKey}`);
         const actorData = await actorResponse.json();
         setActor(actorData);
 
         // Fetch actor's movie credits
-        const moviesResponse = await fetch(`https://api.themoviedb.org/3/person/${id}/movie_credits?api_key=${apiKey}`);
+        const moviesResponse = await fetch(`https://api.themoviedb.org/3/person/${actor.id}/movie_credits?api_key=${apiKey}`);
         const moviesData = await moviesResponse.json();
         setMovies(moviesData.cast);
       } catch (error) {
@@ -26,7 +26,7 @@ function ActorDetails() {
     };
 
     fetchActorDetails();
-  }, [id]);
+  }, [actor.id]);
 
   if (!actor) {
     return <div>Loading...</div>;
