@@ -17,7 +17,7 @@ const Navbar = () => {
           <li>Home</li>
           <li>TV Shows</li>
           <li>Genres</li>
-       <li><Link to='/actors'>Actors</Link></li>
+       <li><Link className="link-a" to='/actors'>Actors</Link></li>
           <li><input type="search" placeholder='Search...' className='input' /> </li>
         </ul>
       </div>
