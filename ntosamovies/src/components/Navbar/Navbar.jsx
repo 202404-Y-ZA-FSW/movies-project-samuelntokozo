@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
-          <li>Movies</li>
+
           <li><input type="search" placeholder='Search...' className='input' /> </li>
         </ul>
       </div>
