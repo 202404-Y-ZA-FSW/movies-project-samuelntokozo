@@ -14,6 +14,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
+          <li>Movies</li>
           <li>TV Shows</li>
           <li>Genres</li>
        <li><Link className="link-a" to='/actors'>Actors</Link></li>
@@ -21,7 +22,6 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-right">
-        {/* <input type="search" placeholder='Search...' /> */}
         <div className="navbar-profile">
           <img src={profile_img} alt="profile" className='profile' />
           <img src={caret_icon} alt="profile" />
