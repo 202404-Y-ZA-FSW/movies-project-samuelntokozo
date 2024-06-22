@@ -11,7 +11,7 @@ import SingleActorsPage from './pages/SingleActorsPage/SingleActorsPage'
 const App = () => {
   return (
     
-    // <Router>
+    <Router>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
@@ -19,8 +19,8 @@ const App = () => {
         <Route path='/actors' element={<Actors />} />
         <Route path='/actors/:id' element={<SingleActorsPage />} />
       </Routes>
-      // <Footer/>
-   /* </Router> */
+       <Footer/>
+    </Router> 
   
   );
 };

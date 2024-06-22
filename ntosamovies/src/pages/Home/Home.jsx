@@ -10,6 +10,7 @@ import Footer from '../../components/Footer/footer';
 
 
 
+
 const Home = () => {
   return (
     <div className='home'>
