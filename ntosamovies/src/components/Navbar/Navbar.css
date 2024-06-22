@@ -38,12 +38,7 @@
     font-size: 14px;
 }
 
-.navbar-right ul li {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-}
+
 
 .navbar-right .icons {
     width: 20px;
@@ -52,13 +47,13 @@
 
 .navbar-right .profile {
     border-radius: 4px;
-    width: 20px;
+    width: 25px;
 }
 
 .navbar-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     cursor: pointer;
     position: relative;
 }
