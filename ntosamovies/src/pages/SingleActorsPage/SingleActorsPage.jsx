@@ -34,7 +34,7 @@ function ActorDetails() {
 
   return (
     <div className="actor-details">
-    <p>Actor Details</p>
+    <p>Actor Details:</p>
       <h1>{actor.name}</h1>
       <img src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`} alt={actor.name} />
       <p><strong>Gender:</strong> {actor.gender === 1 ? "Female" : "Male"}</p>
