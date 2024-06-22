@@ -13,8 +13,11 @@ const Navbar = () => {
         <img src={logo} alt="" />
         <ul>
           <li>Home</li>
-          <li>Movies</li>
           <li>TV Shows</li>
+          <li>Movies</li>
+          <li>New & Popular</li>
+          <li>My List</li>
+          <li>Browse by Langauges</li>
           <li>Actors</li>
           <li><input type="search" placeholder='Search...' className='input' /> </li>
         </ul>
