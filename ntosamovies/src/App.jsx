@@ -5,8 +5,6 @@ import Login from './pages/Login/Login';
 import Player from './pages/Player/Player';
 import Actors from './pages/Actors/Actors';
 // import SingleActorsPage from './pages/Actors/SingleActorsPage';
-import Player from './pages/Player/Player'; 
-import Actors from './pages/Actors/Actors'; 
 
 
 const App = () => {
