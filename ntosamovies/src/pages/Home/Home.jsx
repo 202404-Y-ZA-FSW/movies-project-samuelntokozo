@@ -33,7 +33,6 @@ const Home = () => {
         <TitleCards title={"Only on NtosaMovies"} category={"popular"}/>
         <TitleCards title={"Upcoming"} category={"upcoming"}/>
         <TitleCards title={"Top Picks for You"} category={"now_playing"}/>
-        {/*<Footer /> */}
         <Footer />
       </div>
     </div>
