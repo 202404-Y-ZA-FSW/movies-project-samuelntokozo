@@ -39,15 +39,7 @@ const Footer = () => {
                 </a>
               )}
             </div>
-          </div>
-        ))}
-      </div>
-      <div className="footer-bottom">
-        <span>Copyright © {currentYear}. All Rights Reserved.</span>
-        <span>Terms of use | Privacy Policy</span>
-      </div>
-    </div>
-  );
+
 }
 
-export default Footer;
+export default Footer

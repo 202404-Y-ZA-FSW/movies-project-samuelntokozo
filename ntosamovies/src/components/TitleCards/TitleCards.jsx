@@ -5,6 +5,7 @@ const TitleCards = ({ title, category }) => {
     const [apiData, setApiData] = useState([]);
     const cardsRef = useRef();
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const options = {
         method: 'GET',
         headers: {
