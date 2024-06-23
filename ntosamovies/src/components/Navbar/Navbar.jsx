@@ -1,14 +1,53 @@
 
+
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.svg'
-import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link, useNavigate } from 'react-router-dom';
 
 
+
+
+const Navbar = () => {
+  const [genres, setGenres] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const fetchGenres = async () => {
+      try {
+        const response = await axios.get('https://api.themoviedb.org/3/genre/movie/list', {
+          params: {
+            api_key: 'd7f883f6d380f7e3c2ad35c7dab44528',
+          }
+        });
+        setGenres(response.data.genres);
+      } catch (error) {
+        console.error('Error fetching genres:', error);
+      }
+    };
+
+    fetchGenres();
+  }, []);
+
+  const movieOptions = [
+    { label: 'Top Rated', value: 'top_rated' },
+    { label: 'Popular', value: 'popular' },
+    { label: 'Latest', value: 'latest' },
+    { label: 'Now Playing', value: 'now_playing' },
+    { label: 'Upcoming', value: 'upcoming' },
+  ];
+
+  const handleSearch = (e) => {
+    if (e.key === 'Enter') {
+      const query = encodeURIComponent(searchTerm.trim());
+      navigate(`/search?query=${query}`);
+    }
+  };
 
 
 const Navbar = () => {
@@ -69,6 +108,7 @@ const Navbar = () => {
   };
 
 
+
   return (
     <div className='navbar'>
       <div className="navbar-left">
@@ -111,13 +151,25 @@ const Navbar = () => {
             />
           </li>
         </ul>
+
         </div>
       <div className="navbar-right">
        
       </div>
+
+      </div>
+      {/* 
+        <div className="navbar-right">
+          Add your profile section or other links here
+        </div>
+      */}
+
     </div>
   );
 };
 
+
 export default Navbar;
         
+
+
