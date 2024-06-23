@@ -32,3 +32,45 @@
     bottom: 10px;
     right: 10px;
 }
+
+@media (max-width: 800px) {
+    .title-cards {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .title-cards h2 {
+        font-size: 20px;
+    }
+    .card-list img {
+        width: 200px;
+    }
+    .card-list p {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 500px) {
+  
+    .title-cards h2 {
+        font-size: 15px;
+    }
+    .card-list img {
+        width: 165px;
+    }
+    .card-list p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-icons img {
+        width: 25px;
+    }
+    .footer ul {
+        grid-template-columns: auto auto;
+        gap: 8px;
+        font-size: 14px;
+    }
+}
