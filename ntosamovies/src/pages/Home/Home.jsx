@@ -12,6 +12,8 @@ import { useState, useEffect } from 'react';
 
 import axios from 'axios';
 
+import Actors from '../../pages/Actors/Actors'
+
 const Home = () => {
   const [movies, setMovies] = useState({
     popular: [],
@@ -68,6 +70,15 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="more-cards">
+        <TitleCards title={"Blockbuster Movies"} category={"top_rated"}/>
+        <TitleCards title={"Only on NtosaMovies"} category={"popular"}/>
+        <TitleCards title={"Upcoming"} category={"upcoming"}/>
+        <TitleCards title={"Top Picks for You"} category={"now_playing"}/>
+       
+      </div>
+
+
       {/* Display TitleCards for different movie categories */}
       <TitleCards title={"Only on NtosaMovies"} category={"popular"}>
         {movies.popular.map((movie) => (
@@ -101,6 +112,7 @@ const Home = () => {
           </Link>
         ))}
       </TitleCards>
+
     </div>
   );
 };
