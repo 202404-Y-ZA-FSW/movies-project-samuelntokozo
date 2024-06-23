@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login'; 
 import Player from './pages/Player/Player';
 import Actors from './pages/Actors/Actors';
-import SingleActorsPage from './pages/Actors/SingleActorsPage';
+import SingleActorsPage from './pages/SingleActorsPage/SingleActorsPage'
 import TVShowsList from './pages/TvShows/TvShows';
 import TVShowDetails from './components/TvShowsDetails/TvShowsDeatils';
 import Movies from './pages/Movies/Movies'
