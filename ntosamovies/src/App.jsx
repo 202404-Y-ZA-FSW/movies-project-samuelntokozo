@@ -8,6 +8,7 @@ import Actors from './pages/Actors/Actors';
 import TVShowsList from './pages/TvShows/TvShows';
 import TVShowDetails from './components/TvShowsDetails/TvShowsDeatils';
 import Movies from './pages/Movies/Movies'
+// import SearchResults from './pages/SearchResults';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/tvshows' element={<TVShowsList />} />
         <Route path='/tvshows/:id' element={<TVShowDetails />} />
         <Route path='/movies' element={<Movies />} />
+        {/* <Route path="/search" element={<SearchResults />} /> */}
         
 
       </Routes>
