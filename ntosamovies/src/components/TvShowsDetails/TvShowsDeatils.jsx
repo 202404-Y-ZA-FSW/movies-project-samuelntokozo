@@ -10,7 +10,7 @@ const TVShowDetails = () => {
   useEffect(() => {
     const fetchShowDetails = async () => {
       try {
-        const response = await axios.get(`'https://api.themoviedb.org/3/tv/series_id/lists?/${id}`);
+        const response = await axios.get(`https://api.themoviedb.org/3/tv/series_id/lists?language=en-US&page=1${id}`);
         setShow(response.data);
       } catch (error) {
         console.error('Error fetching show details:', error);

@@ -7,6 +7,8 @@ import Actors from './pages/Actors/Actors';
 // import SingleActorsPage from './pages/Actors/SingleActorsPage';
 import TVShowsList from './pages/TvShows/TvShows';
 import TVShowDetails from './components/TvShowsDetails/TvShowsDeatils';
+import Movies from './pages/Movies/Movies'
+
 
 
 const App = () => {
@@ -19,6 +21,9 @@ const App = () => {
         {/* <Route path='/actors/:id' element={<SingleActorsPage />} /> */}
         <Route path='/tvshows' element={<TVShowsList />} />
         <Route path='/tvshows/:id' element={<TVShowDetails />} />
+        <Route path='/movies' element={<Movies />} />
+        
+
       </Routes>
   );
 };

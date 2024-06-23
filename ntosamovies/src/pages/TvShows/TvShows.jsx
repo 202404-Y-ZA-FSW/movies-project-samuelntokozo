@@ -24,7 +24,7 @@ const TVShowsList = () => {
       <ul>
         {shows.map(show => (
           <li key={show.id}>
-            <Link to={`/tv-shows/${show.id}`}>{show.name}</Link>
+            <Link to={`/TV Shows/${show.id}`}>{show.name}</Link>
           </li>
         ))}
       </ul>
