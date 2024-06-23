@@ -85,11 +85,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      {/* 
-        <div className="navbar-right">
-          Add your profile section or other links here
-        </div>
-      */}
+      
     </div>
   );
 };
