@@ -9,6 +9,11 @@ import { auth } from './Firebase'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import SingleActorsPage from './pages/Actors/SingleActorsPage';
+import TVShowsList from './pages/TvShows/TvShows';
+import TVShowDetails from './components/TvShowsDetails/TvShowsDeatils';
+import Movies from './pages/Movies/Movies'
+// import SearchResults from './pages/SearchResults';
+
 
 
 const App = () => {
@@ -36,6 +41,12 @@ useEffect(()=>{
         <Route path='/player/:id' element={<Player />} />
         <Route path='/actors' element={<Actors />} />
         {/* <Route path='/actors/:id' element={<SingleActorsPage />} /> */}
+        <Route path='/tvshows' element={<TVShowsList />} />
+        <Route path='/tvshows/:id' element={<TVShowDetails />} />
+        <Route path='/movies' element={<Movies />} />
+        {/* <Route path="/search" element={<SearchResults />} /> */}
+        
+
       </Routes>
       </div>
   );

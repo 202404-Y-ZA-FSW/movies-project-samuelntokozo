@@ -16,12 +16,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "axios": "^1.7.2",
-    "firebase": "^10.12.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^6.23.1",
-    "react-toastify": "^10.0.5"
+    "react-youtube": "^10.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

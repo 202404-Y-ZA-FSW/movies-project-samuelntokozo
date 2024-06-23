@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './Login.css'
 import logo from '../../assets/logo.png'
 import { login, signup } from '../../Firebase'
-import netflix_spinner from '../../assets/netflix_spineer.gif'
+import spinner from '../../assets/netflix_spinner.gif';
+
 
 
 
