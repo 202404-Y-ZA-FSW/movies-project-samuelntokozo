@@ -6,7 +6,7 @@ const Footer = () => {
   const ntokoNkosi = {
     name: 'Ntoko Nkosi',
     github: 'https://github.com/NtokozoMitchell',
-    linkedin: 'https://www.linkedin.com/in/ntoko-nkosi/'
+    linkedin: 'https://www.linkedin.com/in/ntokozo-nkosi-966150298/'
   };
 
   const samuelMasuvhe = {
