@@ -13,7 +13,7 @@ const Navbar = () => {
   const [searchResults, setSearchResults] = useState([]);
   const navigate = useNavigate();
   const [error, setError] = useState(null);
-  
+
   useEffect(() => {
     const fetchGenres = async () => {
       try {
