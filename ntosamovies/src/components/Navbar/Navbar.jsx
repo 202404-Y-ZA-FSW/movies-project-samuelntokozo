@@ -93,9 +93,6 @@ const Navbar = () => {
         <div className="navbar-profile">
           <img src={profile_img} alt="profile" className='profile' />
           <img src={caret_icon} alt="profile" />
-          <div className="dropdown">
-            <p onClick={()=>{logout()}}>Sign Out</p>
-          </div>
         </div>
       </div>
 
