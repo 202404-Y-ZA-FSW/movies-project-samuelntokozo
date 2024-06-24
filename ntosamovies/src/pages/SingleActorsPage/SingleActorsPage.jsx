@@ -6,15 +6,14 @@ const API_BASEURL = 'https://api.themoviedb.org/3/';
 const API_KEY = 'd7f883f6d380f7e3c2ad35c7dab44528';
 const IMAGE_BASEURL = 'https://image.tmdb.org/t/p/w500';
 
-function ActorDetails() {
-  const { id } = useParams(); // useParams returns an object with the route parameters, destructure the id property
+const SingleActorsPage = () => {
+  const { id } = useParams();
   const [actor, setActor] = useState(null);
-  const [loading, setLoading] = useState(true); // Initialize loading state to true
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchActorDetails = async () => {
       try {
-        // Fetch actor details
         const response = await axios.get(`${API_BASEURL}person/${id}`, {
           params: {
             api_key: API_KEY
@@ -41,7 +40,7 @@ function ActorDetails() {
   }
 
   if (!actor) {
-    return <div>Oopse Actor Not found...</div>;
+    return <div>Oops! Actor Not found...</div>;
   }
 
   return (
@@ -68,4 +67,4 @@ function ActorDetails() {
   );
 }
 
-export default ActorDetails;
+export default SingleActorsPage;
