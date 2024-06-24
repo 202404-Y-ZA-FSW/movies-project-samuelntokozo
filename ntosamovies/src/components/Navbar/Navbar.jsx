@@ -7,11 +7,12 @@ import { Link } from 'react-router-dom';
 import React, {useState,useEffect,useNavigate} from 'react'
 import axios from 'axios';
 
-
 const Navbar = () => {
   const [genres, setGenres] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
   const navigate = useNavigate();
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchGenres = async () => {
@@ -38,18 +39,43 @@ const Navbar = () => {
     { label: 'Upcoming', value: 'upcoming' },
   ];
 
-  const handleSearch = (e) => {
-    if (e.key === 'Enter') {
-      const query = encodeURIComponent(searchTerm.trim());
-      navigate(`/search?query=${query}`);
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    
+    if (!searchTerm || !searchTerm.trim()) {
+      return;
     }
+
+    setError(null);
+
+    try {
+      const response = await axios.get(`https://api.themoviedb.org/3/search/multi`, {
+        params: {
+          api_key: 'd7f883f6d380f7e3c2ad35c7dab44528',
+          query: searchTerm.trim()
+        }
+      });
+      
+      if (response.status !== 200) {
+        throw new Error(`Failed to fetch search results: ${response.status}`);
+      }
+      
+      const data = response.data;
+      setSearchResults(data.results);
+    } catch (error) {
+      setError(error.message);
+    }
+  };
+
+  const handleResultsClick = () => {
+    setSearchResults([]);
   };
 
   return (
     <div className='navbar'>
       <div className="navbar-left">
         <Link to='/' className="logo-link">
-          <img src={logo}  className="logo" alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
         </Link>
         <ul>
           <li><Link className="link-a" to='/'>Home</Link></li>
@@ -77,25 +103,32 @@ const Navbar = () => {
           </li>
           <li><Link className="link-a" to='/actors'>Actors</Link></li>
           <li>
-            <input
-              type="text"
-              placeholder="Search..."
-              className="input"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              onKeyDown={handleSearch}
-            />
+            <form onSubmit={handleSearch}>
+              <input
+                type="text"
+                placeholder="Search"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </form>
+            <div className='search-results'>
+              {searchResults.length > 0 ? (
+                searchResults.map((movie) => (
+                  <div key={movie.id} onClick={handleResultsClick}>
+                    {movie.title || movie.name}
+                  </div>
+                ))
+              ) : (
+                <div>No results found.</div>
+              )}
+            </div>
           </li>
         </ul>
 
       </div>
 
-
     </div>
-
   );
 };
 
-
 export default Navbar;
-
