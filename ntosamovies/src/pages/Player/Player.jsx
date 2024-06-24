@@ -24,7 +24,7 @@ const Player = () => {
   };
 
   useEffect(() => {
-    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US`, options)
+    fetch(`https://api.themoviedb.org/3/movie/${id}/videos?language=en-US `,options)
       .then(response => response.json())
       .then(response => {
         if (response.results && response.results.length > 0) {

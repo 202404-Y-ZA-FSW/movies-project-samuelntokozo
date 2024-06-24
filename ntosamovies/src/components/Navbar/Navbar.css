@@ -1,10 +1,18 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
+    margin-top: 25px;
+    background-color: #ffffff;
     color: #3fa0fb;
+    font-size: 14px;
+    font-weight: 600;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10;
   }
   
   .navbar-left ul {
@@ -18,28 +26,12 @@
   }
   
   .link-a {
-    color: #a50f91;
+    color: #3fa0fb;
     text-decoration: none;
   }
   
   .input {
     padding: 5px;
-  }
-  
-  .navbar-right .navbar-profile {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .profile {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-  }
-  
-  .caret-icon {
-    margin-left: 5px;
   }
   
   .dropdown-content {
@@ -53,11 +45,10 @@
     display: none;
 }
 
-.navbar .dropdown p {
-    font-size: 13px;
-    cursor: pointer;
-}
-
-.navbar-profile:hover .dropdown {
-    display: block;
+.logo { 
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  max-width: 150px;
+  height: auto;
 }

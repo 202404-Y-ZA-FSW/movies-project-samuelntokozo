@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import './Navbar.css';
-import logo from '../../assets/logo.png';
-import profile_img from '../../assets/profile_img.png';
-import caret_icon from '../../assets/caret_icon.svg';
-import { logout } from '../../Firebase';
+import React from 'react'
+import './Navbar.css'
+import logo from '../../assets/logo.png'
+import profile_img from '../../assets/profile_img.png'
+import caret_icon from '../../assets/caret_icon.svg'
+import { Link } from 'react-router-dom';
+import { logout } from '../../Firebase'
+
 
 
 const Navbar = () => {
@@ -48,14 +48,14 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="navbar-left">
-        <Link to='/navbar' className="logo-link">
+        <Link to='/' className="logo-link">
           <img src={logo} alt="Logo" className="logo" />
         </Link>
         <ul>
           <li><Link className="link-a" to='/'>Home</Link></li>
           <li className="dropdown">
             Movies
-            <img src={caret_icon} alt="dropdown" className="caret-icon" />
+            
             <div className="dropdown-content">
               {movieOptions.map(option => (
                 <Link key={option.value} to={`/movies/${option.value}`} className="link-a">
@@ -66,7 +66,7 @@ const Navbar = () => {
           </li>
           <li className="dropdown">
             Genres
-            <img src={caret_icon} alt="dropdown" className="caret-icon" />
+            
             <div className="dropdown-content">
               {genres.map(genre => (
                 <Link key={genre.id} to={`/genre/${genre.id}`} className="link-a">
@@ -93,10 +93,11 @@ const Navbar = () => {
           <img src={profile_img} alt="profile" className='profile' />
           <img src={caret_icon} alt="profile" />
           <div className="dropdown">
-            <p onClick={() => { logout() }}>Sign Out</p>
+            <p onClick={()=>{logout()}}>Sign Out</p>
           </div>
         </div>
       </div>
+
     </div>
   );
 };

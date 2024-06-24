@@ -1,9 +1,10 @@
 import React from 'react';
-// import './Movie.css';
+//import './Movie.css';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
+
 const Movie = () => {
   const { id } = useParams();
   const [movie, setMovie] = React.useState({});
