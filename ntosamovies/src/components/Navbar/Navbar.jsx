@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
@@ -20,7 +18,7 @@ const Navbar = () => {
         const response = await axios.get('https://api.themoviedb.org/3/genre/movie/list', {
           params: {
             api_key: 'd7f883f6d380f7e3c2ad35c7dab44528',
-          }
+          },
         });
         setGenres(response.data.genres);
       } catch (error) {
@@ -75,7 +73,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="navbar-left">
         <Link to='/' className="logo-link">
-          <img src={logo} className="logo" alt="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
         <ul>
           <li><Link className="link-a" to='/'>Home</Link></li>
@@ -124,8 +122,8 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
-
       </div>
+
 
     </div>
   );
