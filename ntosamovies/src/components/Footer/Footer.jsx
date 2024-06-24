@@ -5,14 +5,14 @@ import './Footer.css';
 const Footer = () => {
   const ntokoNkosi = {
     name: 'Ntoko Nkosi',
-    github: 'https://github.com/ntokonkosi',
+    github: 'https://github.com/NtokozoMitchell',
     linkedin: 'https://www.linkedin.com/in/ntoko-nkosi/'
   };
 
   const samuelMasuvhe = {
     name: 'Samuel Masuvhe',
     github: 'https://github.com/samuelthis',
-    linkedin: 'https://www.linkedin.com/in/samuel-masuvhe/'
+    linkedin: 'https://www.linkedin.com/in/thitevhelwimasuvhe/'
   };
 
   return (
