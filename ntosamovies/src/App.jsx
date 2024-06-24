@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import Home from './pages/Home/Home'; 
 import Player from './pages/Player/Player';
 import Actors from './pages/Actors/Actors';
+import Footer from './components/Footer/Footer';
 // import SingleActorsPage from './pages/Actors/SingleActorsPage';
 import TVShowsList from './pages/TvShows/TvShows';
 import TVShowDetails from './components/TvShowsDetails/TvShowsDeatils';
@@ -25,6 +26,8 @@ const App = () => {
         <Route path='/movies' element={<Movies />} />
         {/* <Route path="/search" element={<SearchResults />} /> */}
       </Routes>
+      <Footer />
+
       </div>
   );
 };
