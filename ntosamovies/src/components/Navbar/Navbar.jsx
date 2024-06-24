@@ -1,6 +1,3 @@
-import React, { useState, useEffect } from 'react';
-import './Navbar.css';
-import logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import React, {useState,useEffect,useNavigate} from 'react'
 import axios from 'axios';
@@ -76,6 +73,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="logo" />
         </Link>
         <ul>
+    
           <li><Link className="link-a" to='/'>Home</Link></li>
           <li className="dropdown">
             Movies
