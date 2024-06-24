@@ -1,4 +1,4 @@
-.title-cards {
+.title-cards p {
     margin-top: 50px;
     margin-bottom: 30px;
 }
@@ -7,7 +7,7 @@
        margin-bottom: 8px;
 }
 
-.card-list {
+.card-list p {
     display: flex;
     gap: 10px;
     overflow-x: scroll;
