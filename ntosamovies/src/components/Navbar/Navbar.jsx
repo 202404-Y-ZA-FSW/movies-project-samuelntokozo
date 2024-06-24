@@ -1,11 +1,12 @@
-import React from 'react'
-import './Navbar.css'
-import logo from '../../assets/logo.png'
-import profile_img from '../../assets/profile_img.png'
-import caret_icon from '../../assets/caret_icon.svg'
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import './Navbar.css';
+import logo from '../../assets/logo.png';
+import profile_img from '../../assets/profile_img.png';
+import caret_icon from '../../assets/caret_icon.svg';
 import { Link } from 'react-router-dom';
-import { logout } from '../../Firebase'
-
+import { logout } from '../../Firebase';
 
 
 const Navbar = () => {
