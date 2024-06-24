@@ -10,7 +10,6 @@
 .card-list p {
     display: flex;
     gap: 10px;
-    overflow-x: scroll;
 }
 
 .card-list::-webkit-scrollbar {
@@ -41,11 +40,16 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
 }
 
 .card-list {
     display: flex;
-    gap: 10px
+    gap: 15px
 }
 
 @media (max-width: 800px) {
