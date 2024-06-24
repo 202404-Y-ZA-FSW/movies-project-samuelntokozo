@@ -53,7 +53,7 @@ const Navbar = () => {
           <li><Link className="link-a" to='/'>Home</Link></li>
           <li className="dropdown">
             Movies
-            <img src={caret_icon} alt="dropdown" className="caret-icon" />
+            
             <div className="dropdown-content">
               {movieOptions.map(option => (
                 <Link key={option.value} to={`/movies/${option.value}`} className="link-a">
@@ -64,7 +64,7 @@ const Navbar = () => {
           </li>
           <li className="dropdown">
             Genres
-            <img src={caret_icon} alt="dropdown" className="caret-icon" />
+            
             <div className="dropdown-content">
               {genres.map(genre => (
                 <Link key={genre.id} to={`/genre/${genre.id}`} className="link-a">
