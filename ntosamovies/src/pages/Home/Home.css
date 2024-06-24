@@ -66,9 +66,7 @@
     background: #6d6d6e66;
 }
 
-.more-cards {
-    padding-left: 6%;
-}
+
 
 @media (max-width: 1024px) {
     .hero-caption .title-cards {
