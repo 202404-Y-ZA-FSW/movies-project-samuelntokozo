@@ -1,17 +1,6 @@
 .navbar {
-    width: 100%;
-    padding: 20px 6%;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    font-size: 14px;
-    color: #e5e5e5;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
-    z-index: 1;
-}
-
-.navbar-left {
-    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 50px;
 }
@@ -63,10 +52,12 @@
 }
 
 .navbar-profile {
+
     display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+    gap: 20px;
+  }
+  
+  .navbar-left ul li {
     position: relative;
 }
 
@@ -80,15 +71,10 @@
     border-radius: 5px;
     margin-top: 7px;
     text-decoration: underline;
+ 0px 8px 16px 0px rgba(0,0,0,0.2);
+
     z-index: 1;
     display: none;
 }
 
-.navbar .dropdown p {
-    font-size: 14px;
-    cursor: pointer;
-}
 
-.navbar-profile:hover .dropdown {
-    display: inline-block;
-}
