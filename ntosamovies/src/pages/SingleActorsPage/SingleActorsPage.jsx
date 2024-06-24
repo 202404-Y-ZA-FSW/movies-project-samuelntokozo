@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+// src/pages/Actors/SingleActorsPage.jsx
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
 
 const API_BASEURL = 'https://api.themoviedb.org/3/';
 const API_KEY = 'd7f883f6d380f7e3c2ad35c7dab44528';
@@ -15,14 +16,10 @@ const SingleActorsPage = () => {
     const fetchActorDetails = async () => {
       try {
         const response = await axios.get(`${API_BASEURL}person/${id}`, {
-          params: {
-            api_key: API_KEY
-          }
+          params: { api_key: API_KEY }
         });
         const moviesResponse = await axios.get(`${API_BASEURL}person/${id}/movie_credits`, {
-          params: {
-            api_key: API_KEY
-          }
+          params: { api_key: API_KEY }
         });
         setActor({ ...response.data, movies: moviesResponse.data.cast });
         setLoading(false);
@@ -31,7 +28,6 @@ const SingleActorsPage = () => {
         setLoading(false);
       }
     };
-
     fetchActorDetails();
   }, [id]);
 
@@ -45,7 +41,6 @@ const SingleActorsPage = () => {
 
   return (
     <div className="actor-details">
-      <p>Actor Details:</p>
       <h1>{actor.name}</h1>
       <img src={`${IMAGE_BASEURL}${actor.profile_path}`} alt={actor.name} style={{ width: '300px', height: '450px', objectFit: 'cover' }} />
       <p><strong>Gender:</strong> {actor.gender === 1 ? "Female" : "Male"}</p>
@@ -65,6 +60,6 @@ const SingleActorsPage = () => {
       </div>
     </div>
   );
-}
+};
 
 export default SingleActorsPage;
