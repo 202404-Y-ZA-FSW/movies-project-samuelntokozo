@@ -7,10 +7,7 @@ import play_icon from '../../assets/play_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards'
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
 import axios from 'axios';
-
-import Actors from '../../pages/Actors/Actors'
 
 const Home = () => {
   const [movies, setMovies] = useState({
