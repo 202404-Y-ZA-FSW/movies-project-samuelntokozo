@@ -1,7 +1,9 @@
 .actors-container {
   padding: 20px;
-  text-align: center;
-  background-color: #4099f1;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+
 }
 
 h1 {
@@ -11,15 +13,16 @@ h1 {
 
 .actors-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
 }
 
 .actor-card {
-  background-color: #ffffff;
+  background-color: #08e2ed;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -30,14 +33,16 @@ h1 {
 }
 
 .actor-card h2 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-weight: bold;
+  
 }
 
 .actor-card img {
-  width: 100%;
-  border-radius: 0.5rem;
+  width: 10%;
+  height: 30px;
+  border-radius: 30%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
