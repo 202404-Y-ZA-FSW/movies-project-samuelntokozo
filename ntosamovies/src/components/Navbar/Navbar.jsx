@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import React, { useState,useEffect,useNavigate } from 'react'
+import React, { useState,useEffect} from 'react'
 import axios from 'axios';
 
 const Navbar = () => {
@@ -69,7 +69,7 @@ const Navbar = () => {
     <div className='navbar'>
       <div className="navbar-left">
         <Link to='/' className="logo-link">
-          <img src={logo} alt="Logo" className="logo" />
+          {/* <img src={logo} alt="Logo" className="logo" /> */}
         </Link>
         <ul>
     
