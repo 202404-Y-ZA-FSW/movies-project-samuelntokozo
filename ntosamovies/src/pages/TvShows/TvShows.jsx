@@ -7,7 +7,7 @@ const API_BASEURL = 'https://api.themoviedb.org/3/';
 const API_KEY = 'd7f883f6d380f7e3c2ad35c7dab44528';
 const IMAGE_BASEURL = 'https://image.tmdb.org/t/p/w500';
 
-const TvShowDetails = () => {
+const TvShowsDetails = () => {
   const { id } = useParams();
   const [show, setShow] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -47,5 +47,5 @@ const TvShowDetails = () => {
   );
 };
 
-export default TvShowDetails;
+export default TvShowsDetails;
 

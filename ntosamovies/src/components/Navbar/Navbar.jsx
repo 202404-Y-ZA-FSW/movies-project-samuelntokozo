@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
-import React, {useState,useEffect,useNavigate} from 'react'
+import React, { useState,useEffect,useNavigate } from 'react'
 import axios from 'axios';
 
 const Navbar = () => {
   const [genres, setGenres] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const navigate = useNavigate();
-  const [error, setError] = useState(null);
+  const [ setError] = useState(null);
 
   useEffect(() => {
     const fetchGenres = async () => {

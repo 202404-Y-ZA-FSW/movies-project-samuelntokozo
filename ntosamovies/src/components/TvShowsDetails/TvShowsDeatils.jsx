@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 
-const TVShowDetails = () => {
+const TvShowsDetails = () => {
   const { id } = useParams();
   const [show, setShow] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -39,4 +39,4 @@ const TVShowDetails = () => {
   );
 };
 
-export default TVShowDetails;
+export default TvShowsDetails;
